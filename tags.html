@@ -6,10 +6,10 @@
 </head>
 <body>
 
-	<div>
-  		<a href="index.html">Home</a>
-  		<a href="tags.html">HTML Tags</a>
-  		<a href="moby_dick.html">Moby Dick</a>
+	<div style="text-align: right;">
+  		<a href="index.html" style="text-decoration: none; color: #0000ff;">Home</a>
+  		<a href="tags.html" style="margin-left: 10px; text-decoration: none; color: #0000ff;">HTML Tags</a>
+  		<a href="moby_dick.html" style="margin-left: 10px; text-decoration: none; color: #0000ff;">Moby Dick</a>
   	</div>
 
 	<header>
@@ -43,14 +43,14 @@
 	    <th>Purpose</th>
 	  </tr>
 	  <tr>
-	  	<td><code>h1</code>&dash;<code>h6</code></td>
-	  	<td>headings</td>
-	  	<td>include a heading (levels 1&dash;6)</td>
+	  	<td style="padding: 10px"><code>h1</code>&dash;<code>h6</code></td>
+	  	<td style="padding: 10px">headings</td>
+	  	<td style="padding: 10px">include a heading (levels 1&dash;6)</td>
 	  </tr>
 	  <tr>
-	  	<td><code>p</code></td>
-	  	<td>paragraph</td>
-	  	<td>include a paragraph of text</td>
+	  	<td style="padding: 10px"><code>p</code></td>
+	  	<td style="padding: 10px">paragraph</td>
+	  	<td style="padding: 10px">include a paragraph of text</td>
 	  </tr>
 	  <tr>
 	  	<td><code>table</code></td>
@@ -136,6 +136,149 @@
 	  	<td><code>code block</code></td>
 	  </tr>
 	</table>
+	</div>
+
+	<h2>Document Tags</h2>
+	<div>
+		<table>
+			<tr>
+	  	<th>Tag</th>
+	  	<th>Name</th>
+	  	<th>Purpose</th>
+	  	<th>Example</th>
+	  	<th>Result</th>
+	  </tr>
+			<tr>
+	  	<td><code>html</code></td>
+	  	<td>html</td>
+	  	<td>language to render webpages</td>
+	  	<td>
+	  		<code>
+	  			&lt;html&gt;&lt;head&gt;&lt;body&gt;&lt;/body&gt;&lt;/head&gt;/html&gt;
+	  		</code>
+	  	</td>
+	  	<td>
+	  		<code>
+	  		{enter web page here}
+	  		</code>
+		</td>
+	  </tr>
+	  <tr>
+	  	<td><code>head</code></td>
+	  	<td>head</td>
+	  	<td>tag to contain all head elements</td>
+	  	<td>
+	  		<code>
+	  			&lt;head&gt;&lt;/head&gt;
+	  		</code>
+	  	</td>
+	  	<td><code><head>Webpage header</head></code></td>
+	  </tr>
+	  <tr>
+	  	<td><code>body</code></td>
+	  	<td>body</td>
+	  	<td>tag to contain the main website elements</td>
+	  	<td>
+	  		<code>
+	  		&lt;body&gt;The content of the document......&lt;/body&gt;
+	  		</code>		
+	  	</td>
+	  	<td><body>The content of the document......</body></td>
+	  </tr>
+	  <tr>
+	  	<td><code>title</code></td>
+	  	<td>title</td>
+	  	<td>tag to contain the title of the web page</td>
+	  	<td>
+	  		<code>
+	  			&lt;title&gt;Webpage tab title&lt;/title&gt;
+	  		</code>
+  		</td>
+  		<td>
+  			<code>
+  				{insert page title here}
+  			</code>
+  		</td>
+  		</tr>
+  		<tr>
+  			<td><code>meta</code></td>
+  			<td>meta</td>
+  			<td>tag to provide metadata about HTML document</td>
+  			<td>
+  				<code>
+  					&lt;meta charset="utf-8"&gt;
+  				</code>
+  			</td>
+  			<td>{insert metadata here}</td>
+  		</tr>
+	  </table>
+	</div>
+	<div>
+		<h2>Styling Elements</h2>
+	  <table>
+	  	<tr>
+	  		<th>Tag</th>
+	  		<th>Name</th>
+	  		<th>Purpose</th>
+	  		<th>Example</th>
+	  		<th>Result</th>
+	  	</tr>
+	  	<tr>
+	  		<td><code>style</code></td>
+	  		<td>style</td>
+	  		<td>add 'styles' to content within html tags</td>
+	  		<td>
+	  			<code>
+	  			&lt;a href="tags.html" style=" text-decoration: none; color: #0000ff;"&gt;HTML Tags&lt;/a&gt;
+	  			</code>
+	  		</td>
+	  		<td><a href="tags.html" style="text-decoration: none; color: #0000ff;">HTML Tags</a></td>
+	  	</tr>
+	  	<tr>
+	  		<td><code>ul</code></td>
+	  		<td>ul</td>
+	  		<td>create a bulleted list</td>
+	  		<td>
+	  			<code>
+	  				&lt;ul&gt;&lt;li&gt;first item&lt;/li&gt;&lt;li&gt;second item&lt;/li&gt;&lt/ul&gt;
+  				</code>
+	  		</td>
+	  		<td><ul><li>first item</li><li>second item</li></ul></td>
+	  	</tr>
+	  	<tr>
+	  		<td><code>ol</code></td>
+	  		<td>ol</td>
+	  		<td>create a numbered list</td>
+	  		<td>
+	  			<code>
+	  				&lt;ol&gt;&lt;li&gt;first item&lt;/li&gt;&lt;li&gt;second item&lt;/li&gt;&lt/ol&gt;
+  				</code>
+	  		</td>
+	  		<td><ol><li>first item</li><li>second item</li></ol></td>
+	  	</tr>
+	  	<tr>
+	  		<td><code>div</code></td>
+	  		<td>div</td>
+	  		<td>tag to define a section of a webpage</td>
+	  		<td>
+	  			<code>
+	  				&lt;div&gt;this is a section of a webpage&lt;/div&gt;
+  				</code>
+	  		</td>
+	  		<td><div>It may not look it, but this text is "div'd"</div></td>
+	  	</tr>
+	  	<tr>
+	  		<td><code>span</code></td>
+	  		<td>span</td>
+	  		<td>tag to group inline elements in a webpage</td>
+	  		<td>
+	  			<code>
+	  				&lt;span&gt;span example&lt;/span&gt;
+  				</code>
+	  		</td>
+	  		<td><span>It may not look it, but this text is 'spanned'</span></td>
+	  	</tr>
+	  </table>
 	</div>
 
 </body>
